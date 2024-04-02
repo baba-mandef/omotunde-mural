@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-CORE_APPS = []
+CORE_APPS = [
+    'omural',
+    'omural.home'
+]
 
 THIRD_PARTY_APPS = []
 
@@ -64,7 +67,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['ui'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
